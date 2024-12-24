@@ -1,7 +1,6 @@
 # Diet Recommendation Aystem
 Machine Learning project
 
-```markdown
 # Diet Recommendation System
 
 The **Diet Recommendation System** is a machine learning-based project designed to provide personalized dietary recommendations. It calculates essential metrics like BMI, BMR, and daily caloric needs, and utilizes clustering to recommend foods based on nutritional requirements and user preferences. 
