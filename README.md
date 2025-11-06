@@ -20,6 +20,8 @@ The **Diet Recommendation System** is a machine learning-based project designed 
 
 ## Installation
 
+### Option 1: Local Installation
+
 1. Clone the repository:
    ```bash
    git clone <repository-url>
@@ -36,26 +38,29 @@ The **Diet Recommendation System** is a machine learning-based project designed 
    jupyter notebook Diet_Recommendation_System.ipynb
    ```
 
+### Option 2: Using Docker
+
+1. Build the Docker image:
+   ```bash
+   docker build -t diet-recommendation .
+   ```
+
+2. Run the container:
+   ```bash
+   docker run diet-recommendation
+   ```
+
 ## Usage
 
 1. **Data Preprocessing**: The notebook cleans and preprocesses the datasets for machine learning and clustering.
 2. **Model Training**: Linear Regression is trained on user demographic data to predict caloric maintenance requirements.
 3. **Recommendation**: Provide user inputs to get tailored dietary recommendations for different meal times.
 
-
 ## File Structure
 
 - `Diet_Recommendation_System.ipynb`: Main Jupyter Notebook containing the code and implementation.
+- `Diet_Recommendation_System.py`: Python script version of the notebook.
 - `Dataset.csv`: Primary dataset for caloric maintenance prediction.
-- `RAW_recipes.csv`: Dataset for food clustering and recommendation (download from link above).
+- `RAW_recipes.csv`: Dataset for food clustering and recommendation.
 - `requirements.txt`: List of dependencies.
-
-## Visualizations
-
-- **Feature Importance**: Horizontal bar chart showing the impact of features in caloric prediction.
-- **Actual vs Predicted Plot**: Scatter plot comparing actual and predicted caloric values.
-- **Nutritional Breakdown**: Pie charts visualizing nutrient distribution for recommended foods.
-
-## Contributing
-
-Feel free to submit issues or pull requests for bug fixes or enhancements.
+- `Dockerfile`: Configuration for containerizing the application.
